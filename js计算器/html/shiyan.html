@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/jquery.min.js"></script>
+    <style>
+        input{
+            width: 100px;
+            height: 100px;
+            border: 1px solid chartreuse;
+        }
+    </style>
+</head>
+<body>
+
+<label>
+    <input type="text"/>
+</label>
+<button class="cun">存</button>
+<button class="top">上</button>
+<button class="down">下</button>
+<button class="shanchu">删</button>
+<script>
+    $(function(){
+         // 保存监听
+        let value = []
+        $('.cun').on('click', function(){
+            value[value.length] = $('input').prop('value');
+            window.sessionStorage.setItem("value",JSON.stringify(value))
+        })
+        // 上翻监听
+        let i = 0;
+        $('.top').on('click', function(){
+            value = eval(window.sessionStorage.getItem("value"))
+            i = i-1
+            if(typeof(value[i])==="undefined"){
+                i=value.length-1
+            }
+            console.log(value[i])
+        })
+        // 下翻监听
+        $('.down').on('click',function(){
+            value = eval(window.sessionStorage.getItem("value"))
+            i = i+1
+            if(typeof(value[i])==="undefined"){
+                i=0
+            }
+            console.log(value[i])
+        })
+        // 删除监听
+        $('.shanchu').on('click',function(){
+            value.splice(i,1)
+            window.sessionStorage.setItem("value",JSON.stringify(value))
+        })
+    })
+</script>
+</body>
+</html>

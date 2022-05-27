@@ -1,0 +1,174 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+body{
+    background-image: url("../image/laopo.jpeg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.icon{
+    width: 14px;
+    height: 14px;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+    color: aliceblue;
+}
+.icon2{
+    width: 34px;
+    height: 34px;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+    color: aliceblue;
+}
+.icon3{
+    width: 25px;
+    height: 25px;
+}
+header{
+    width: 270px;
+    height: 550px;
+    background-color: black;
+    margin: 30px auto;
+    position: relative;
+    border-radius: 30px;
+    box-shadow:0 0 10px #000;
+    overflow: hidden;
+}
+.head{
+    width: 100%;
+    height: 25px;
+}
+.head_icon{
+    width: 230px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 30px;
+    background-color: black;
+    text-align: center;
+    line-height: 35px;
+}
+#Small_black_circle{
+    width: 13px;
+    height: 13px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 13px;
+    left: -18px;
+    box-shadow:0 0 3px white;
+}
+.head_icon li{
+    width: 17px;
+    height: 25px;
+}
+#time{
+    font-size: 6px;
+    color: white;
+}
+#partition{
+    width: 87px;
+}
+
+
+.switch{
+    width: 17%;
+    height: 31px;
+    padding-top: 22px;
+    padding-left: 226px;
+}
+
+article{
+    width: 100%;
+    height: 85px;
+}
+footer{
+    width: 100%;
+    height: 347px;
+    margin-top: 40px;
+    border-radius: 15px;
+    background-color: #26252B;
+}
+
+footer>.keyboard>ol{
+    width: 60px;
+    height: 100%;
+    float: left;
+    text-align: center;
+}
+footer>.keyboard>ol>li{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-top: 5px;
+    line-height: 50px;
+    box-shadow:inset 2px 2px 2px #2C2D35;
+    /*box-shadow:inset -2px -2px 5px #1D1E23;*/
+    color: white;
+    background-color: #27282b;
+    font-size: 18px;
+    font-weight: 600;
+}
+.keyboard{
+    width: 240px;
+    height: 327px;
+    margin: 0 auto;
+    padding-top: 5px;
+}
+#special{
+    height: 105px;
+    border-radius: 25px;
+    line-height: 105px;
+    background-color: #3679F9;
+}
+header>footer>.keyboard>ol>.ic{
+    line-height: 63px;
+}
+.input{
+    width: 100%;
+    height: 55px;
+    position: relative;
+}
+.calculation{
+    width: 100%;
+    height: 30px;
+}
+.cursor{
+    display: inline-block;
+    height: 85%;
+    width: 2px;
+    background-color: #3679F9;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.show{
+    position: absolute;
+    right: 11px;
+    font-size: 45px;
+    color: white;
+    line-height: 55px;
+    white-space: nowrap;
+}
+.calculation{
+    width: 100%;
+    padding-right: 10px;
+    text-align: right;
+    height: 30px;
+    box-sizing: border-box;
+}
+.output{
+    font-size: 25px;
+    position: absolute;
+    right: 11px;
+    color: #979797;
+    line-height: 30px;
+    white-space: nowrap;
+}

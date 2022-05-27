@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.master{
+    width: 100%;
+}
+.box{
+    width: 400px;
+    height: 400px;
+    position: relative;
+    top: 100px;
+    left: 100px;
+    border: 1px solid salmon;
+    cursor: move;
+}
+.move{
+    display: none;
+    width: 200px;
+    height: 200px;
+    background-color: yellowgreen;
+    opacity: 0.5;
+    position: absolute;
+}
+.box_two{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    right: -510px;
+    overflow: hidden;
+    border: 1px solid cornflowerblue;
+    display: none;
+}
+.img{
+    width: 1000px;
+    position: relative;
+}

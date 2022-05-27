@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="../css/计算器.css"/>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/font.js"></script>
+    <script src="../js/basics.js"></script>
+    <script src="../js/reasonable.js"></script>
+    <script src="../js/algorithm.js"></script>
+    <script src="../js/perfect.js"></script>
+    <script src="../js/equalToButtonListening.js"></script>
+    <script src="../js/history.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="head">
+            <ol class="head_icon">
+                <li id="Small_black_circle"></li>  <!--黑色圈-->
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-hd-fill"></use>
+                    </svg>
+                </li>
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-xinhao2"></use>
+                    </svg>
+                </li>
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-xinhao"></use>
+                    </svg>
+                </li>
+                <li id="partition"></li>
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-QQ"></use>
+                    </svg>
+                </li>
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-weixin"></use>
+                    </svg>
+                </li>
+                <li>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-80dianliang"></use>
+                    </svg>
+                </li>
+                <li id="time">
+
+                </li>
+            </ol>
+        </div>
+
+        <div class="switch">
+            <svg class="icon2" aria-hidden="true">
+                <use xlink:href="#icon-a-sidianhuise_huaban1"></use>
+            </svg>
+        </div>
+        <article>
+            <div class="input">
+                <i class="cursor"></i>
+                <span class="show"></span>
+            </div>
+            <div class="calculation">
+                <span class="output"></span>
+            </div>
+        </article>
+        <footer>
+            <div class="keyboard">
+                <ol>
+                <li class="ic" id="cun">
+                    <svg class="icon3" aria-hidden="true">
+                        <use xlink:href="#icon-baocun"></use>
+                    </svg>
+                </li>
+                <li style="color: #3679F9;" class="C">C</li>
+                <li data-index="7" class="number">7</li>
+                <li data-index="4" class="number">4</li>
+                <li data-index="1" class="number">1</li>
+                <li data-index="%" class="character">%</li>
+            </ol>
+            <ol>
+                <li class="ic" id="top">
+                    <svg class="icon3" aria-hidden="true">
+                        <use xlink:href="#icon-top"></use>
+                    </svg>
+                </li>
+                <li class="ic character" data-index="/">
+                    <svg class="icon3" aria-hidden="true">
+                        <use xlink:href="#icon-chufa"></use>
+                    </svg>
+                </li>
+                <li data-index="8" class="number">8</li>
+                <li data-index="5" class="number">5</li>
+                <li data-index="2" class="number">2</li>
+                <li data-index="0" class="number">0</li>
+            </ol>
+            <ol>
+                <li class="ic" id="down">
+                    <svg class="icon3" aria-hidden="true">
+                        <use xlink:href="#icon-down"></use>
+                    </svg>
+                </li>
+                <li style="color: #3679F9;" data-index="x" class="character">x</li>
+                <li data-index="9" class="number">9</li>
+                <li data-index="6" class="number">6</li>
+                <li data-index="3" class="number">3</li>
+                <li data-index="." class="number">.</li>
+            </ol>
+            <ol>
+                <li class="ic " id="shanchu">
+                    <svg class="icon3" aria-hidden="true">
+                        <use xlink:href="#icon-shanchu1"></use>
+                    </svg>
+                </li>
+                <li class="ic s">
+                    <svg class="icon3" aria-hidden="true">
+                        <use xlink:href="#icon-shanchu"></use>
+                    </svg>
+                </li>
+                <li style="color: #3679F9;" data-index="-" class="character">-</li>
+                <li style="color: #3679F9;" data-index="+" class="character">+</li>
+                <li id="special" data-index="=" class="equal">=</li>
+            </ol>
+            </div>
+
+        </footer>
+
+    </header>
+</body>
+</html>
